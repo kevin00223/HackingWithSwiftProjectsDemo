@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A24AFA49221E483C009FF948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFA48221E483C009FF948 /* AppDelegate.swift */; };
+		A24AFA4B221E483C009FF948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFA4A221E483C009FF948 /* ViewController.swift */; };
+		A24AFA4E221E483C009FF948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFA4C221E483C009FF948 /* Main.storyboard */; };
+		A24AFA50221E483D009FF948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24AFA4F221E483D009FF948 /* Assets.xcassets */; };
+		A24AFA53221E483D009FF948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFA51221E483D009FF948 /* LaunchScreen.storyboard */; };
+		A24AFA5E221E483D009FF948 /* LKStormViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFA5D221E483D009FF948 /* LKStormViewerTests.swift */; };
+		A24AFA69221E483D009FF948 /* LKStormViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFA68221E483D009FF948 /* LKStormViewerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A24AFA5A221E483D009FF948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A24AFA3D221E483C009FF948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A24AFA44221E483C009FF948;
+			remoteInfo = LKStormViewer;
+		};
+		A24AFA65221E483D009FF948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A24AFA3D221E483C009FF948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A24AFA44221E483C009FF948;
+			remoteInfo = LKStormViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A24AFA45221E483C009FF948 /* LKStormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKStormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24AFA48221E483C009FF948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A24AFA4A221E483C009FF948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A24AFA4D221E483C009FF948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A24AFA4F221E483D009FF948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A24AFA52221E483D009FF948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A24AFA54221E483D009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24AFA59221E483D009FF948 /* LKStormViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKStormViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24AFA5D221E483D009FF948 /* LKStormViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKStormViewerTests.swift; sourceTree = "<group>"; };
+		A24AFA5F221E483D009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24AFA64221E483D009FF948 /* LKStormViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKStormViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24AFA68221E483D009FF948 /* LKStormViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKStormViewerUITests.swift; sourceTree = "<group>"; };
+		A24AFA6A221E483D009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A24AFA42221E483C009FF948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24AFA56221E483D009FF948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24AFA61221E483D009FF948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A24AFA3C221E483C009FF948 = {
+			isa = PBXGroup;
+			children = (
+				A24AFA47221E483C009FF948 /* LKStormViewer */,
+				A24AFA5C221E483D009FF948 /* LKStormViewerTests */,
+				A24AFA67221E483D009FF948 /* LKStormViewerUITests */,
+				A24AFA46221E483C009FF948 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A24AFA46221E483C009FF948 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A24AFA45221E483C009FF948 /* LKStormViewer.app */,
+				A24AFA59221E483D009FF948 /* LKStormViewerTests.xctest */,
+				A24AFA64221E483D009FF948 /* LKStormViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A24AFA47221E483C009FF948 /* LKStormViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A24AFA48221E483C009FF948 /* AppDelegate.swift */,
+				A24AFA4A221E483C009FF948 /* ViewController.swift */,
+				A24AFA4C221E483C009FF948 /* Main.storyboard */,
+				A24AFA4F221E483D009FF948 /* Assets.xcassets */,
+				A24AFA51221E483D009FF948 /* LaunchScreen.storyboard */,
+				A24AFA54221E483D009FF948 /* Info.plist */,
+			);
+			path = LKStormViewer;
+			sourceTree = "<group>";
+		};
+		A24AFA5C221E483D009FF948 /* LKStormViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A24AFA5D221E483D009FF948 /* LKStormViewerTests.swift */,
+				A24AFA5F221E483D009FF948 /* Info.plist */,
+			);
+			path = LKStormViewerTests;
+			sourceTree = "<group>";
+		};
+		A24AFA67221E483D009FF948 /* LKStormViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A24AFA68221E483D009FF948 /* LKStormViewerUITests.swift */,
+				A24AFA6A221E483D009FF948 /* Info.plist */,
+			);
+			path = LKStormViewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A24AFA44221E483C009FF948 /* LKStormViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24AFA6D221E483D009FF948 /* Build configuration list for PBXNativeTarget "LKStormViewer" */;
+			buildPhases = (
+				A24AFA41221E483C009FF948 /* Sources */,
+				A24AFA42221E483C009FF948 /* Frameworks */,
+				A24AFA43221E483C009FF948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKStormViewer;
+			productName = LKStormViewer;
+			productReference = A24AFA45221E483C009FF948 /* LKStormViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A24AFA58221E483D009FF948 /* LKStormViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24AFA70221E483D009FF948 /* Build configuration list for PBXNativeTarget "LKStormViewerTests" */;
+			buildPhases = (
+				A24AFA55221E483D009FF948 /* Sources */,
+				A24AFA56221E483D009FF948 /* Frameworks */,
+				A24AFA57221E483D009FF948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A24AFA5B221E483D009FF948 /* PBXTargetDependency */,
+			);
+			name = LKStormViewerTests;
+			productName = LKStormViewerTests;
+			productReference = A24AFA59221E483D009FF948 /* LKStormViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A24AFA63221E483D009FF948 /* LKStormViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24AFA73221E483D009FF948 /* Build configuration list for PBXNativeTarget "LKStormViewerUITests" */;
+			buildPhases = (
+				A24AFA60221E483D009FF948 /* Sources */,
+				A24AFA61221E483D009FF948 /* Frameworks */,
+				A24AFA62221E483D009FF948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A24AFA66221E483D009FF948 /* PBXTargetDependency */,
+			);
+			name = LKStormViewerUITests;
+			productName = LKStormViewerUITests;
+			productReference = A24AFA64221E483D009FF948 /* LKStormViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A24AFA3D221E483C009FF948 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LK;
+				TargetAttributes = {
+					A24AFA44221E483C009FF948 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A24AFA58221E483D009FF948 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A24AFA44221E483C009FF948;
+					};
+					A24AFA63221E483D009FF948 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A24AFA44221E483C009FF948;
+					};
+				};
+			};
+			buildConfigurationList = A24AFA40221E483C009FF948 /* Build configuration list for PBXProject "LKStormViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A24AFA3C221E483C009FF948;
+			productRefGroup = A24AFA46221E483C009FF948 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A24AFA44221E483C009FF948 /* LKStormViewer */,
+				A24AFA58221E483D009FF948 /* LKStormViewerTests */,
+				A24AFA63221E483D009FF948 /* LKStormViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A24AFA43221E483C009FF948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24AFA53221E483D009FF948 /* LaunchScreen.storyboard in Resources */,
+				A24AFA50221E483D009FF948 /* Assets.xcassets in Resources */,
+				A24AFA4E221E483C009FF948 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24AFA57221E483D009FF948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24AFA62221E483D009FF948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A24AFA41221E483C009FF948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24AFA4B221E483C009FF948 /* ViewController.swift in Sources */,
+				A24AFA49221E483C009FF948 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24AFA55221E483D009FF948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24AFA5E221E483D009FF948 /* LKStormViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24AFA60221E483D009FF948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24AFA69221E483D009FF948 /* LKStormViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A24AFA5B221E483D009FF948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A24AFA44221E483C009FF948 /* LKStormViewer */;
+			targetProxy = A24AFA5A221E483D009FF948 /* PBXContainerItemProxy */;
+		};
+		A24AFA66221E483D009FF948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A24AFA44221E483C009FF948 /* LKStormViewer */;
+			targetProxy = A24AFA65221E483D009FF948 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A24AFA4C221E483C009FF948 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24AFA4D221E483C009FF948 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A24AFA51221E483D009FF948 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24AFA52221E483D009FF948 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A24AFA6B221E483D009FF948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A24AFA6C221E483D009FF948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A24AFA6E221E483D009FF948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKStormViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.LKStormViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A24AFA6F221E483D009FF948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKStormViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.LKStormViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A24AFA71221E483D009FF948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKStormViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.LKStormViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LKStormViewer.app/LKStormViewer";
+			};
+			name = Debug;
+		};
+		A24AFA72221E483D009FF948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKStormViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.LKStormViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LKStormViewer.app/LKStormViewer";
+			};
+			name = Release;
+		};
+		A24AFA74221E483D009FF948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKStormViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.LKStormViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LKStormViewer;
+			};
+			name = Debug;
+		};
+		A24AFA75221E483D009FF948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKStormViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.LKStormViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LKStormViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A24AFA40221E483C009FF948 /* Build configuration list for PBXProject "LKStormViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24AFA6B221E483D009FF948 /* Debug */,
+				A24AFA6C221E483D009FF948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24AFA6D221E483D009FF948 /* Build configuration list for PBXNativeTarget "LKStormViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24AFA6E221E483D009FF948 /* Debug */,
+				A24AFA6F221E483D009FF948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24AFA70221E483D009FF948 /* Build configuration list for PBXNativeTarget "LKStormViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24AFA71221E483D009FF948 /* Debug */,
+				A24AFA72221E483D009FF948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24AFA73221E483D009FF948 /* Build configuration list for PBXNativeTarget "LKStormViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24AFA74221E483D009FF948 /* Debug */,
+				A24AFA75221E483D009FF948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A24AFA3D221E483C009FF948 /* Project object */;
+}
