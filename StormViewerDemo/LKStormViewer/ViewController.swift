@@ -34,6 +34,10 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
+        
+        //数组排序: 闭包中$0表示第一个参数, $1表示第二个参数
+//        pictures = pictures.sorted { $0 > $1}
+        pictures.sort {$0 < $1}
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +47,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
         cell.textLabel?.text = pictures[indexPath.row] //textLabel? : optional chaining
+        cell.textLabel?.text = "Picture \(indexPath.row + 1) of \(pictures.count)"
         return cell
     }
     
