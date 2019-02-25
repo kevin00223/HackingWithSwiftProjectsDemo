@@ -14,6 +14,7 @@
 4. To shuffle up the order of an array: array.shuffle
 5. To generate a random number in a range: Int.random(in: range)
 ￼￼￼
+
 ![](http://i63.tinypic.com/24x2mva.jpg)
 
 ![](http://i67.tinypic.com/2zz2gpk.png)
