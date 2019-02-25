@@ -18,3 +18,10 @@
 ![](http://i63.tinypic.com/24x2mva.jpg)
 
 ![](http://i67.tinypic.com/2zz2gpk.png)
+
+### key points in demo *SocialMedia*
+1. Keyword: @objc
+   ![](http://i64.tinypic.com/2yl7l0o.png)
+2. UIActivityViewController
+3. Privacy setting from info.plist
+4. Difference between ‘if let’ and ‘guard let’
