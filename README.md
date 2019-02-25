@@ -1,13 +1,13 @@
 # HackingWithSwiftProjectsDemo
 
-### key points in demo **StormViewer**
+### key points in demo *StormViewer*
 1. Load image resource from main bundle
 2. Optional unwrapping via ‘if let’
 3. Optional chaining: try doing this, but do nothing if there is a problem
 4. Array sorting
 
 
-### key points in demo **GuessTheFlag**
+### key points in demo *GuessTheFlag*
 1. implicitly unwrapping optionals (IBOutlet)
 2. Relation between point and pixel
 3. CALayer
