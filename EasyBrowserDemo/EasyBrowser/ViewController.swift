@@ -33,6 +33,11 @@ class ViewController: UIViewController {
     
     func initNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
+        
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let refresher = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+        toolbarItems = [spacer, refresher]
+        navigationController?.isToolbarHidden = false
     }
     
     @objc func openTapped() {
