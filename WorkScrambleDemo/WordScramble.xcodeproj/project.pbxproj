@@ -14,6 +14,7 @@
 		A24AFBDD222CD285009FF948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFBDB222CD285009FF948 /* LaunchScreen.storyboard */; };
 		A24AFBE8222CD285009FF948 /* WordScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFBE7222CD285009FF948 /* WordScrambleTests.swift */; };
 		A24AFBF3222CD285009FF948 /* WordScrambleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFBF2222CD285009FF948 /* WordScrambleUITests.swift */; };
+		A24AFC01222CD623009FF948 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A24AFC00222CD623009FF948 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A24AFBEE222CD285009FF948 /* WordScrambleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordScrambleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24AFBF2222CD285009FF948 /* WordScrambleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITests.swift; sourceTree = "<group>"; };
 		A24AFBF4222CD285009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24AFC00222CD623009FF948 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A24AFBD9222CD285009FF948 /* Assets.xcassets */,
 				A24AFBDB222CD285009FF948 /* LaunchScreen.storyboard */,
 				A24AFBDE222CD285009FF948 /* Info.plist */,
+				A24AFC00222CD623009FF948 /* start.txt */,
 			);
 			path = WordScramble;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24AFBDD222CD285009FF948 /* LaunchScreen.storyboard in Resources */,
+				A24AFC01222CD623009FF948 /* start.txt in Resources */,
 				A24AFBDA222CD285009FF948 /* Assets.xcassets in Resources */,
 				A24AFBD8222CD284009FF948 /* Main.storyboard in Resources */,
 			);
