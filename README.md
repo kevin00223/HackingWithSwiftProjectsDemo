@@ -34,3 +34,18 @@
 4. KVO: #keyPath / UIProgressView
 5. toolbarItems
 6. Escaping closure!!!
+
+
+### key points in demo5 *WordScramble*
+1. Bundle.main.url(forResource: , withExtension: ) 通过文件名+文件后缀 获取资源路径
+2. String(contentOf: )  loading a file into a string
+3. Difference between isEmpty and count == 0
+   ![](https://s2.ax1x.com/2019/03/05/kX6YGD.png)
+4. Trailing closure:  the structure of a closure: trailing closure syntax, unowned self, a parameter being passed in, then the need for self. to make capturing clear
+   ![](https://s2.ax1x.com/2019/03/05/kX6yi8.png)
+5. reference cycle:
+   ![](https://s2.ax1x.com/2019/03/05/kX6wqI.png)
+6. keyword: return  The return keyword exits a method at any time it's used. If you use return by itself, it exits the method and does nothing else. But if you use return with a value, it sends that value back to whatever called the method
+7. UITextChecker: a class to spot spelling errors, which makes it perfect for knowing if a given word is real or not
+8. Utf16: 
+   ![](https://s2.ax1x.com/2019/03/05/kX6BZt.png)
