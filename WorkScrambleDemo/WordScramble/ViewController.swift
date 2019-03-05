@@ -48,7 +48,13 @@ class ViewController: UITableViewController {
     }
     
     func initNavigationBar() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Restart", style: .plain, target: self, action: #selector(restartTheGame))
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
+    }
+    
+    @objc func restartTheGame() {
+        startGame()
     }
     
     @objc func promptForAnswer() {
@@ -75,31 +81,35 @@ class ViewController: UITableViewController {
         if isPossible(lowerAnswer) {
             if isOriginal(lowerAnswer) {
                 if isReal(lowerAnswer) {
-                    //验证通过后 添加到usedWords中
-                    usedWords.insert(lowerAnswer, at: 0) //注意与append的区别: insert at可以将元素加在任一index处, 而append只能将元素添加到数组最后
-
-                    //1. 因为每次最多只插入一行 因此使用reloadData()速度反而更慢
-                    //2. 使用reloadData()无动画效果 看上去很突兀
-                    let indexPath = IndexPath(row: 0, section: 0)
-                    tableView.insertRows(at: [indexPath], with: .automatic)
-                    return
+                    if isTheSame(lowerAnswer) {
+                        //验证通过后 添加到usedWords中
+                        usedWords.insert(lowerAnswer, at: 0) //注意与append的区别: insert at可以将元素加在任一index处, 而append只能将元素添加到数组最后
+                        
+                        //1. 因为每次最多只插入一行 因此使用reloadData()速度反而更慢
+                        //2. 使用reloadData()无动画效果 看上去很突兀
+                        let indexPath = IndexPath(row: 0, section: 0)
+                        tableView.insertRows(at: [indexPath], with: .automatic)
+                    }else{
+                        errorTitle = "Same with the start word!"
+                        errorMessage = "Use your brain!"
+                        showErrorMessage(errorTitle, errorMessage)
+                    }
                 }else{
                     errorTitle = "Word not recognised"
                     errorMessage = "You can't just make them up, you know!"
+                    showErrorMessage(errorTitle, errorMessage)
                 }
             }else{
                 errorTitle = "Word used already"
                 errorMessage = "Be more original!"
+                showErrorMessage(errorTitle, errorMessage)
             }
         }else{
             guard let title = title?.lowercased() else { return }
             errorTitle = "Word not possible"
             errorMessage = "You can't spell that word from \(title)"
+            showErrorMessage(errorTitle, errorMessage)
         }
-
-        let alertController = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
     }
     
     // 组成单词的字母是否都从title中来
@@ -127,13 +137,35 @@ class ViewController: UITableViewController {
     
     // 是否是一个真正的单词
     func isReal(_ word: String) -> Bool {
-        // 用来检测是否有拼写错误的类
-        let wordChecker = UITextChecker()
-        let wordRange = NSRange(location: 0, length: word.utf16.count)
-        let typoRange = wordChecker.rangeOfMisspelledWord(in: word, range: wordRange, startingAt: 0, wrap: false, language: "en")
-        
-        return typoRange.location == NSNotFound //NSNotFound是Int类型, location属性返回的也是Int类型
+        // 判断单词长度是否短于两个字母
+        if word.count < 3 {
+            return false
+        }else{
+            // 用来检测是否有拼写错误的类
+            let wordChecker = UITextChecker()
+            let wordRange = NSRange(location: 0, length: word.utf16.count)
+            let typoRange = wordChecker.rangeOfMisspelledWord(in: word, range: wordRange, startingAt: 0, wrap: false, language: "en")
+            
+            return typoRange.location == NSNotFound //NSNotFound是Int类型, location属性返回的也是Int类型
+        }
     }
+    
+    // 是否跟标题单词一样
+    func isTheSame(_ word: String) -> Bool {
+        guard let tempTitle = title?.lowercased() else { return false }
+        if tempTitle == word {
+            return false
+        }
+        return true
+    }
+    
+    // 提示错误信息的弹窗
+    func showErrorMessage(_ errorTitle: String, _ errorMessage: String) {
+        let alertController = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return usedWords.count
