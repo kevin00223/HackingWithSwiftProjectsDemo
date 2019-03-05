@@ -11,8 +11,8 @@
 1. implicitly unwrapping optionals (IBOutlet)
 2. Relation between point and pixel
 3. CALayer
-4. To shuffle up the order of an array: array.shuffle
-5. To generate a random number in a range: Int.random(in: range)
+4. To shuffle up the order of an array: 'array.shuffle'
+5. To generate a random number in a range: 'Int.random(in: range)'
 ￼￼￼
 
 ![](http://i63.tinypic.com/24x2mva.jpg)
@@ -49,3 +49,8 @@
 7. UITextChecker: a class to spot spelling errors, which makes it perfect for knowing if a given word is real or not
 8. Utf16: 
    ![](https://s2.ax1x.com/2019/03/05/kX6BZt.png)
+   
+   
+### key points in demo6 *Auto Layout*
+passed
+1. translatesAutoresizingMaskIntoConstraints: by default iOS generates Auto Layout constraints for you based on a view's size and position. Set this property to be false to disable this feature so that we can set the constraints by ourselves.
