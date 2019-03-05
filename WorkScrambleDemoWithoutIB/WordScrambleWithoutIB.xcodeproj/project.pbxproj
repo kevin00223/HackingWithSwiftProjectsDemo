@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A24AFC0F222E21F2009FF948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC0E222E21F2009FF948 /* AppDelegate.swift */; };
-		A24AFC11222E21F2009FF948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC10222E21F2009FF948 /* ViewController.swift */; };
 		A24AFC14222E21F2009FF948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFC12222E21F2009FF948 /* Main.storyboard */; };
 		A24AFC16222E21F3009FF948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24AFC15222E21F3009FF948 /* Assets.xcassets */; };
 		A24AFC19222E21F3009FF948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFC17222E21F3009FF948 /* LaunchScreen.storyboard */; };
 		A24AFC24222E21F3009FF948 /* WordScrambleWithoutIBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC23222E21F3009FF948 /* WordScrambleWithoutIBTests.swift */; };
 		A24AFC2F222E21F3009FF948 /* WordScrambleWithoutIBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC2E222E21F3009FF948 /* WordScrambleWithoutIBUITests.swift */; };
+		A24AFC3D222E22E0009FF948 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC3C222E22E0009FF948 /* MainViewController.swift */; };
+		A24AFC3F222E2379009FF948 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A24AFC3E222E2379009FF948 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		A24AFC0B222E21F2009FF948 /* WordScrambleWithoutIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScrambleWithoutIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24AFC0E222E21F2009FF948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A24AFC10222E21F2009FF948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A24AFC13222E21F2009FF948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A24AFC15222E21F3009FF948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A24AFC18222E21F3009FF948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		A24AFC2A222E21F3009FF948 /* WordScrambleWithoutIBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordScrambleWithoutIBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24AFC2E222E21F3009FF948 /* WordScrambleWithoutIBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleWithoutIBUITests.swift; sourceTree = "<group>"; };
 		A24AFC30222E21F3009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24AFC3C222E22E0009FF948 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A24AFC3E222E2379009FF948 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = ../../WorkScrambleDemo/WordScramble/start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				A24AFC0E222E21F2009FF948 /* AppDelegate.swift */,
-				A24AFC10222E21F2009FF948 /* ViewController.swift */,
+				A24AFC3C222E22E0009FF948 /* MainViewController.swift */,
 				A24AFC12222E21F2009FF948 /* Main.storyboard */,
 				A24AFC15222E21F3009FF948 /* Assets.xcassets */,
 				A24AFC17222E21F3009FF948 /* LaunchScreen.storyboard */,
 				A24AFC1A222E21F3009FF948 /* Info.plist */,
+				A24AFC3E222E2379009FF948 /* start.txt */,
 			);
 			path = WordScrambleWithoutIB;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24AFC19222E21F3009FF948 /* LaunchScreen.storyboard in Resources */,
+				A24AFC3F222E2379009FF948 /* start.txt in Resources */,
 				A24AFC16222E21F3009FF948 /* Assets.xcassets in Resources */,
 				A24AFC14222E21F2009FF948 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A24AFC11222E21F2009FF948 /* ViewController.swift in Sources */,
 				A24AFC0F222E21F2009FF948 /* AppDelegate.swift in Sources */,
+				A24AFC3D222E22E0009FF948 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
