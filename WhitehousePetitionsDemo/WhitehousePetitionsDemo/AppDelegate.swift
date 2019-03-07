@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //1. 拿到window的根控制器: tabBarController
+        //2. 拿到storyboard
+        //3. 通过identifier拿到nav
+        //4. 设置nav的tabBarItem
+        //5. 将nav添加成tabBarController的子控制器
+        
+        if let tabBarController = window?.rootViewController as? UITabBarController {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "NavController")
+            vc.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
+            tabBarController.viewControllers?.append(vc)
+        }
+        
         return true
     }
 

@@ -16,13 +16,22 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
+        let urlString: String
+        
+        if navigationController?.tabBarItem.tag == 0 {
+            urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
+        }else{
+            urlString = "https://www.hackingwithswift.com/samples/petitions-2.json"
+        }
+        
         // 应该开子线程 异步执行
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url) {
                 parse(json: data)
+                return
             }
         }
+        showError()
     }
     
     func parse(json: Data) {
@@ -32,6 +41,12 @@ class ViewController: UITableViewController {
             petitions = jsonPetitions.results
             tableView.reloadData()
         }
+    }
+    
+    func showError() {
+        let alertController = UIAlertController(title: "Loading Error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
