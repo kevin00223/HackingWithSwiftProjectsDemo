@@ -54,3 +54,13 @@
 ### key points in demo6 *Auto Layout*
 passed
 1. `translatesAutoresizingMaskIntoConstraints`: by default iOS generates Auto Layout constraints for you based on a view's size and position. Set this property to be false to disable this feature so that we can set the constraints by ourselves.
+
+
+### key points in demo7 *Whitehouse Petitions*
+1. Codable protocol
+   ![](https://s2.ax1x.com/2019/03/07/kxaW7T.png)
+2. struct: default memberwise initializer, 替代OC中model的作用
+3. Data(contentOf: ) : convert file of JSON into data
+4. JSON parsing
+5. Unwrap variables using the same name 
+   ![](https://s2.ax1x.com/2019/03/07/kxahAU.png)
