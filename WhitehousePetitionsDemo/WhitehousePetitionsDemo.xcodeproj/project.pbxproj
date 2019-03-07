@@ -14,6 +14,8 @@
 		A24AFC572230B1D5009FF948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFC552230B1D5009FF948 /* LaunchScreen.storyboard */; };
 		A24AFC622230B1D5009FF948 /* WhitehousePetitionsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC612230B1D5009FF948 /* WhitehousePetitionsDemoTests.swift */; };
 		A24AFC6D2230B1D5009FF948 /* WhitehousePetitionsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC6C2230B1D5009FF948 /* WhitehousePetitionsDemoUITests.swift */; };
+		A24AFC7B2230BCA8009FF948 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC7A2230BCA8009FF948 /* Petition.swift */; };
+		A24AFC7D2230C01C009FF948 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFC7C2230C01C009FF948 /* Petitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A24AFC682230B1D5009FF948 /* WhitehousePetitionsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitehousePetitionsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24AFC6C2230B1D5009FF948 /* WhitehousePetitionsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitehousePetitionsDemoUITests.swift; sourceTree = "<group>"; };
 		A24AFC6E2230B1D5009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24AFC7A2230BCA8009FF948 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		A24AFC7C2230C01C009FF948 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A24AFC532230B1D5009FF948 /* Assets.xcassets */,
 				A24AFC552230B1D5009FF948 /* LaunchScreen.storyboard */,
 				A24AFC582230B1D5009FF948 /* Info.plist */,
+				A24AFC7A2230BCA8009FF948 /* Petition.swift */,
+				A24AFC7C2230C01C009FF948 /* Petitions.swift */,
 			);
 			path = WhitehousePetitionsDemo;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24AFC4F2230B1D3009FF948 /* ViewController.swift in Sources */,
+				A24AFC7D2230C01C009FF948 /* Petitions.swift in Sources */,
 				A24AFC4D2230B1D3009FF948 /* AppDelegate.swift in Sources */,
+				A24AFC7B2230BCA8009FF948 /* Petition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
