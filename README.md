@@ -66,7 +66,7 @@ passed
    ![](https://s2.ax1x.com/2019/03/07/kxahAU.png)
 
 
-### Key points in demo8 Swifty Words
+### Key points in demo8 *Swifty Words*
 1. `components(separatedBy:)` to split text into an array
 2. `joined(separator:)` this makes an array into a single string, with each array element separated by the string specified in its parameter
 3. `replacingOccurrences()` we're asking it to replace all instances of | with an empty string, so HA|UNT|ED will become HAUNTED
