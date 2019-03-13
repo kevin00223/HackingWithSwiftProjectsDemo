@@ -93,11 +93,20 @@ class ViewController: UIViewController {
         }
     }
     
+    func wrongGuess() {
+        currentAnswer.text = ""
+        
+        for btn in activatedButtons {
+            btn.isHidden = false
+        }
+        
+        activatedButtons.removeAll()
+    }
+    
     @objc func submitButtonTapped(_ sender: UIButton) {
         guard let answerText = currentAnswer.text else { return }
         
         if let solutionPosition = solutions.firstIndex(of: answerText) {
-            activatedButtons.removeAll()
             
             var splitAnswers = answersLabel.text?.components(separatedBy: "\n")
             splitAnswers?[solutionPosition] = answerText
@@ -105,15 +114,24 @@ class ViewController: UIViewController {
             
             currentAnswer.text = ""
             score += 1
-//            scoreLabel.text = "Score: \(score)"
             
-            if score % 7 == 0 {
+            if activatedButtons.count == 20 {
+                activatedButtons.removeAll()
+                
                 let alertController = UIAlertController(title: "Well Done", message: "Are you ready for the next level?", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "Let's go", style: .default, handler: { (action) in
                     self.levelUp()
                 }))
                 present(alertController, animated: true, completion: nil)
             }
+        } else {
+            score -= 1
+            
+            let alertContoller = UIAlertController(title: "Oops", message: "You get it wrong, please try again!", preferredStyle: .alert)
+            alertContoller.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                self.wrongGuess()
+            }))
+            present(alertContoller, animated: true, completion: nil)
         }
     }
     
@@ -224,6 +242,9 @@ class ViewController: UIViewController {
                 letterButton.titleLabel?.font = UIFont.systemFont(ofSize: 36)
                 letterButton.setTitle("WWW", for: .normal)
                 letterButton.frame = CGRect(x: c * width, y: r * height, width: width, height: height)
+                letterButton.layer.borderColor = UIColor.black.cgColor
+                letterButton.layer.borderWidth = 1
+                letterButton.layer.cornerRadius = 3.0
                 letterButton.addTarget(self, action: #selector(letterButtonTapped(_:)), for: .touchUpInside)
                 containerView.addSubview(letterButton)
                 letterButtons.append(letterButton)
