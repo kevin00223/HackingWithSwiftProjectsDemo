@@ -67,9 +67,10 @@ passed
 
 
 ### Key points in demo8 *Swifty Words*
-1. `components(separatedBy:)` to split text into an array
-2. `joined(separator:)` this makes an array into a single string, with each array element separated by the string specified in its parameter
-3. `replacingOccurrences()` we're asking it to replace all instances of | with an empty string, so HA|UNT|ED will become HAUNTED
-4. `enumerated()` to loop over an array, and it passes you each object from the array, as well as that object's position in the array
-5. Property observer: `didSet`, is code that gets run when their property changes or is about to change(`willSet`)
+1. grid view
+2. `components(separatedBy:)` to split text into an array
+3. `joined(separator:)` this makes an array into a single string, with each array element separated by the string specified in its parameter
+4. `replacingOccurrences()` we're asking it to replace all instances of | with an empty string, so HA|UNT|ED will become HAUNTED
+5. `enumerated()` to loop over an array, and it passes you each object from the array, as well as that object's position in the array
+6. Property observer: `didSet`, is code that gets run when their property changes or is about to change(`willSet`)
    ![](http://i65.tinypic.com/iftxxi.png)
