@@ -1,0 +1,6 @@
+module Pods_SwiftyWords {
+  umbrella header "Pods-SwiftyWords-umbrella.h"
+
+  export *
+  module * { export * }
+}

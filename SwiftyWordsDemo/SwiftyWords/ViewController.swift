@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var clueLabel: UILabel!
+    var answerLabel: UILabel!
+    var currentAnswer: UITextField!
+    var scoreLabel: UILabel!
+    var letterButtons = [UIButton]()
+    
+    override func loadView() {
+        view = UIView()
+        view.backgroundColor = .white
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

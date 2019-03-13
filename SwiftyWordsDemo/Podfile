@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'SwiftyWords' do
+
+pod 'SnapKit'
+
+end
