@@ -74,3 +74,10 @@ passed
 5. `enumerated()` to loop over an array, and it passes you each object from the array, as well as that object's position in the array
 6. Property observer: `didSet`, is code that gets run when their property changes or is about to change(`willSet`)
    ![](http://i65.tinypic.com/iftxxi.png)
+   
+
+### Key points in demo9 Grand Central Dispatch
+1. `DispatchQueue.global().async` to perform long-running operation on the background thread
+2. `DispatchQueue.main.async` to get back to foreground thread to update user interface
+   ![](http://i63.tinypic.com/2nv8eao.png)
+   ![](http://i65.tinypic.com/i76flj.png)
