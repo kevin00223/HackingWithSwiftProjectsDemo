@@ -24,20 +24,30 @@ class ViewController: UITableViewController {
         
         title = "Storm Viewer"
         
-        //1.获取图片资源 并全局保存
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath!
-        let items = try! fm.contentsOfDirectory(atPath: path)
-        
-        for item in items {
-            if item.hasPrefix("nssl") {
-                pictures.append(item)
+        requestData()
+    }
+    
+    func requestData() {
+        DispatchQueue.global().async { [weak self] in
+            //1.获取图片资源 并全局保存
+            let fm = FileManager.default
+            let path = Bundle.main.resourcePath!
+            let items = try! fm.contentsOfDirectory(atPath: path)
+            
+            for item in items {
+                if item.hasPrefix("nssl") {
+                    self?.pictures.append(item)
+                }
+            }
+            
+            //数组排序: 闭包中$0表示第一个参数, $1表示第二个参数
+            //        pictures = pictures.sorted { $0 > $1}
+            self?.pictures.sort {$0 < $1}
+            
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
             }
         }
-        
-        //数组排序: 闭包中$0表示第一个参数, $1表示第二个参数
-//        pictures = pictures.sorted { $0 > $1}
-        pictures.sort {$0 < $1}
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
