@@ -24,14 +24,16 @@ class ViewController: UITableViewController {
             urlString = "https://www.hackingwithswift.com/samples/petitions-2.json"
         }
         
-        // 应该开子线程 异步执行
-        if let url = URL(string: urlString) {
-            if let data = try? Data(contentsOf: url) {
-                parse(json: data)
-                return
+        DispatchQueue.global().async { [weak self] in
+            if let url = URL(string: urlString) {
+                if let data = try? Data(contentsOf: url) { //⚠️加载网络数据 耗时操作: on main thread it blocks execution of any further code in the method until it has connected to the server and fully downloaded all the data
+                    self?.parse(json: data)
+                    return
+                }
             }
         }
         showError()
+        
     }
     
     func parse(json: Data) {
