@@ -76,7 +76,7 @@ passed
    ![](http://i65.tinypic.com/iftxxi.png)
    
 
-### Key points in demo9 Grand Central Dispatch
+### Key points in demo9 *Grand Central Dispatch*
 1. `DispatchQueue.global().async` to perform long-running operation on the background thread
 2. `DispatchQueue.main.async` to get back to foreground thread to update user interface
    ![](http://i63.tinypic.com/2nv8eao.png)
