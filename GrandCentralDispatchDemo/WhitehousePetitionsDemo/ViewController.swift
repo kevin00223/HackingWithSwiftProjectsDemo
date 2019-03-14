@@ -38,6 +38,7 @@ class ViewController: UITableViewController {
     func parse(json: Data) {
         let decoder = JSONDecoder()
         
+        //data parsing is long-running operation
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
             //⚠️get back to main thread to update user interface
