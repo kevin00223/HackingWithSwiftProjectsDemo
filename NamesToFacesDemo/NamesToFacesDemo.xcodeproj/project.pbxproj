@@ -14,6 +14,7 @@
 		A24AFD4D223F40D5009FF948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24AFD4B223F40D5009FF948 /* LaunchScreen.storyboard */; };
 		A24AFD58223F40D5009FF948 /* NamesToFacesDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFD57223F40D5009FF948 /* NamesToFacesDemoTests.swift */; };
 		A24AFD63223F40D5009FF948 /* NamesToFacesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFD62223F40D5009FF948 /* NamesToFacesDemoUITests.swift */; };
+		A24AFD71223F4BA0009FF948 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AFD70223F4BA0009FF948 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A24AFD5E223F40D5009FF948 /* NamesToFacesDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamesToFacesDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24AFD62223F40D5009FF948 /* NamesToFacesDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesToFacesDemoUITests.swift; sourceTree = "<group>"; };
 		A24AFD64223F40D5009FF948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24AFD70223F4BA0009FF948 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A24AFD49223F40D5009FF948 /* Assets.xcassets */,
 				A24AFD4B223F40D5009FF948 /* LaunchScreen.storyboard */,
 				A24AFD4E223F40D5009FF948 /* Info.plist */,
+				A24AFD70223F4BA0009FF948 /* PersonCell.swift */,
 			);
 			path = NamesToFacesDemo;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24AFD71223F4BA0009FF948 /* PersonCell.swift in Sources */,
 				A24AFD45223F40D3009FF948 /* ViewController.swift in Sources */,
 				A24AFD43223F40D3009FF948 /* AppDelegate.swift in Sources */,
 			);
