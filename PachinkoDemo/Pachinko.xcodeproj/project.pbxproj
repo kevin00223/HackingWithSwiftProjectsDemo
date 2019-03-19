@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23B434E2240EF7C0013E9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B434D2240EF7C0013E9EB /* AppDelegate.swift */; };
+		A23B43502240EF7C0013E9EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B434F2240EF7C0013E9EB /* ViewController.swift */; };
+		A23B43532240EF7C0013E9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23B43512240EF7C0013E9EB /* Main.storyboard */; };
+		A23B43552240EF7D0013E9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23B43542240EF7D0013E9EB /* Assets.xcassets */; };
+		A23B43582240EF7D0013E9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23B43562240EF7D0013E9EB /* LaunchScreen.storyboard */; };
+		A23B43632240EF7D0013E9EB /* PachinkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B43622240EF7D0013E9EB /* PachinkoTests.swift */; };
+		A23B436E2240EF7D0013E9EB /* PachinkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B436D2240EF7D0013E9EB /* PachinkoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A23B435F2240EF7D0013E9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23B43422240EF7C0013E9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23B43492240EF7C0013E9EB;
+			remoteInfo = Pachinko;
+		};
+		A23B436A2240EF7D0013E9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23B43422240EF7C0013E9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23B43492240EF7C0013E9EB;
+			remoteInfo = Pachinko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A23B434A2240EF7C0013E9EB /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23B434D2240EF7C0013E9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A23B434F2240EF7C0013E9EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A23B43522240EF7C0013E9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A23B43542240EF7D0013E9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A23B43572240EF7D0013E9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A23B43592240EF7D0013E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23B435E2240EF7D0013E9EB /* PachinkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PachinkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23B43622240EF7D0013E9EB /* PachinkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PachinkoTests.swift; sourceTree = "<group>"; };
+		A23B43642240EF7D0013E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23B43692240EF7D0013E9EB /* PachinkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PachinkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23B436D2240EF7D0013E9EB /* PachinkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PachinkoUITests.swift; sourceTree = "<group>"; };
+		A23B436F2240EF7D0013E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A23B43472240EF7C0013E9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23B435B2240EF7D0013E9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23B43662240EF7D0013E9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A23B43412240EF7C0013E9EB = {
+			isa = PBXGroup;
+			children = (
+				A23B434C2240EF7C0013E9EB /* Pachinko */,
+				A23B43612240EF7D0013E9EB /* PachinkoTests */,
+				A23B436C2240EF7D0013E9EB /* PachinkoUITests */,
+				A23B434B2240EF7C0013E9EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A23B434B2240EF7C0013E9EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A23B434A2240EF7C0013E9EB /* Pachinko.app */,
+				A23B435E2240EF7D0013E9EB /* PachinkoTests.xctest */,
+				A23B43692240EF7D0013E9EB /* PachinkoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A23B434C2240EF7C0013E9EB /* Pachinko */ = {
+			isa = PBXGroup;
+			children = (
+				A23B434D2240EF7C0013E9EB /* AppDelegate.swift */,
+				A23B434F2240EF7C0013E9EB /* ViewController.swift */,
+				A23B43512240EF7C0013E9EB /* Main.storyboard */,
+				A23B43542240EF7D0013E9EB /* Assets.xcassets */,
+				A23B43562240EF7D0013E9EB /* LaunchScreen.storyboard */,
+				A23B43592240EF7D0013E9EB /* Info.plist */,
+			);
+			path = Pachinko;
+			sourceTree = "<group>";
+		};
+		A23B43612240EF7D0013E9EB /* PachinkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A23B43622240EF7D0013E9EB /* PachinkoTests.swift */,
+				A23B43642240EF7D0013E9EB /* Info.plist */,
+			);
+			path = PachinkoTests;
+			sourceTree = "<group>";
+		};
+		A23B436C2240EF7D0013E9EB /* PachinkoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A23B436D2240EF7D0013E9EB /* PachinkoUITests.swift */,
+				A23B436F2240EF7D0013E9EB /* Info.plist */,
+			);
+			path = PachinkoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A23B43492240EF7C0013E9EB /* Pachinko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23B43722240EF7D0013E9EB /* Build configuration list for PBXNativeTarget "Pachinko" */;
+			buildPhases = (
+				A23B43462240EF7C0013E9EB /* Sources */,
+				A23B43472240EF7C0013E9EB /* Frameworks */,
+				A23B43482240EF7C0013E9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pachinko;
+			productName = Pachinko;
+			productReference = A23B434A2240EF7C0013E9EB /* Pachinko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A23B435D2240EF7D0013E9EB /* PachinkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23B43752240EF7D0013E9EB /* Build configuration list for PBXNativeTarget "PachinkoTests" */;
+			buildPhases = (
+				A23B435A2240EF7D0013E9EB /* Sources */,
+				A23B435B2240EF7D0013E9EB /* Frameworks */,
+				A23B435C2240EF7D0013E9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23B43602240EF7D0013E9EB /* PBXTargetDependency */,
+			);
+			name = PachinkoTests;
+			productName = PachinkoTests;
+			productReference = A23B435E2240EF7D0013E9EB /* PachinkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A23B43682240EF7D0013E9EB /* PachinkoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23B43782240EF7D0013E9EB /* Build configuration list for PBXNativeTarget "PachinkoUITests" */;
+			buildPhases = (
+				A23B43652240EF7D0013E9EB /* Sources */,
+				A23B43662240EF7D0013E9EB /* Frameworks */,
+				A23B43672240EF7D0013E9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23B436B2240EF7D0013E9EB /* PBXTargetDependency */,
+			);
+			name = PachinkoUITests;
+			productName = PachinkoUITests;
+			productReference = A23B43692240EF7D0013E9EB /* PachinkoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A23B43422240EF7C0013E9EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LK;
+				TargetAttributes = {
+					A23B43492240EF7C0013E9EB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A23B435D2240EF7D0013E9EB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A23B43492240EF7C0013E9EB;
+					};
+					A23B43682240EF7D0013E9EB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A23B43492240EF7C0013E9EB;
+					};
+				};
+			};
+			buildConfigurationList = A23B43452240EF7C0013E9EB /* Build configuration list for PBXProject "Pachinko" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A23B43412240EF7C0013E9EB;
+			productRefGroup = A23B434B2240EF7C0013E9EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A23B43492240EF7C0013E9EB /* Pachinko */,
+				A23B435D2240EF7D0013E9EB /* PachinkoTests */,
+				A23B43682240EF7D0013E9EB /* PachinkoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23B43482240EF7C0013E9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23B43582240EF7D0013E9EB /* LaunchScreen.storyboard in Resources */,
+				A23B43552240EF7D0013E9EB /* Assets.xcassets in Resources */,
+				A23B43532240EF7C0013E9EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23B435C2240EF7D0013E9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23B43672240EF7D0013E9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23B43462240EF7C0013E9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23B43502240EF7C0013E9EB /* ViewController.swift in Sources */,
+				A23B434E2240EF7C0013E9EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23B435A2240EF7D0013E9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23B43632240EF7D0013E9EB /* PachinkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23B43652240EF7D0013E9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23B436E2240EF7D0013E9EB /* PachinkoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A23B43602240EF7D0013E9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23B43492240EF7C0013E9EB /* Pachinko */;
+			targetProxy = A23B435F2240EF7D0013E9EB /* PBXContainerItemProxy */;
+		};
+		A23B436B2240EF7D0013E9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23B43492240EF7C0013E9EB /* Pachinko */;
+			targetProxy = A23B436A2240EF7D0013E9EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A23B43512240EF7C0013E9EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23B43522240EF7C0013E9EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A23B43562240EF7D0013E9EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23B43572240EF7D0013E9EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A23B43702240EF7D0013E9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A23B43712240EF7D0013E9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A23B43732240EF7D0013E9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.Pachinko";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A23B43742240EF7D0013E9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.Pachinko";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A23B43762240EF7D0013E9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PachinkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.PachinkoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pachinko.app/Pachinko";
+			};
+			name = Debug;
+		};
+		A23B43772240EF7D0013E9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PachinkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.PachinkoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pachinko.app/Pachinko";
+			};
+			name = Release;
+		};
+		A23B43792240EF7D0013E9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PachinkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.PachinkoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pachinko;
+			};
+			name = Debug;
+		};
+		A23B437A2240EF7D0013E9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PachinkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.PachinkoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pachinko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A23B43452240EF7C0013E9EB /* Build configuration list for PBXProject "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23B43702240EF7D0013E9EB /* Debug */,
+				A23B43712240EF7D0013E9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23B43722240EF7D0013E9EB /* Build configuration list for PBXNativeTarget "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23B43732240EF7D0013E9EB /* Debug */,
+				A23B43742240EF7D0013E9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23B43752240EF7D0013E9EB /* Build configuration list for PBXNativeTarget "PachinkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23B43762240EF7D0013E9EB /* Debug */,
+				A23B43772240EF7D0013E9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23B43782240EF7D0013E9EB /* Build configuration list for PBXNativeTarget "PachinkoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23B43792240EF7D0013E9EB /* Debug */,
+				A23B437A2240EF7D0013E9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A23B43422240EF7C0013E9EB /* Project object */;
+}
