@@ -1,0 +1,6 @@
+module Pods_NameToFacesDemoWithoutIB {
+  umbrella header "Pods-NameToFacesDemoWithoutIB-umbrella.h"
+
+  export *
+  module * { export * }
+}
