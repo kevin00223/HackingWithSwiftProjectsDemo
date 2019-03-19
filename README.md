@@ -81,3 +81,15 @@ passed
 2. `DispatchQueue.main.async` to get back to foreground thread to update user interface
    ![](http://i63.tinypic.com/2nv8eao.png)
    ![](http://i65.tinypic.com/i76flj.png)
+   
+   
+### Key points in demo10 *Names To Faces*
+1. `UICollectionView`: showing cells in grid
+2. `fatalError(message: String)` always causes a crash, so we can use it to escape from a method that has a return value without sending anything back
+3. Optional Typecasting: to tell Swift that an object it thought was type A is actually type E. When dequeueing a custom collectionview cell we need to typecast it to our specific type.
+4. `UIImagePickerController`:
+    1. Property: `allowsEditing`  set the allowsEditing property to be true, which allows the user to crop the picture they select
+    2. delegate
+5. `UUID`
+6. ⚠️为什么创建一个继承自NSObject类的Person类 还自定义了构造方法 却不使用struct(本身就自带默认的`memberwise initializer`, 解释见demo12)
+7. ⚠️重新运行后之前显示的图片消失 页面为空(涉及数据持久化存储 见demo12)
