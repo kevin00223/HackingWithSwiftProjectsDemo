@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UICollectionViewController {
     
     var people = [Person]()
+    let picker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,15 @@ class ViewController: UICollectionViewController {
     }
     
     @objc func addNewPerson() {
-        let picker = UIImagePickerController()
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+            initImagePickerController()
+        } else {
+            initImagePickerController()
+        }
+    }
+    
+    func initImagePickerController() {
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true, completion: nil)
@@ -62,13 +71,29 @@ class ViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
+        // alertController 1
+//        let person = people[indexPath.item]
+//        let alertController = UIAlertController(title: "Rename Person", message: nil, preferredStyle: .alert)
+//        alertController.addTextField(configurationHandler: nil)
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+//        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+//            guard let newName = alertController.textFields?[0].text else { return }
+//            person.name = newName
+//            self.collectionView.reloadData()
+//        }))
+//        present(alertController, animated: true, completion: nil)
+        
+        // alertController 2
+        let alertController = UIAlertController(title: "Alert", message: nil, preferredStyle: .alert)
         let person = people[indexPath.item]
-        let alertController = UIAlertController(title: "Rename Person", message: nil, preferredStyle: .alert)
         alertController.addTextField(configurationHandler: nil)
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+        alertController.addAction(UIAlertAction(title: "Rename", style: .default, handler: { (action) in
             guard let newName = alertController.textFields?[0].text else { return }
             person.name = newName
+            self.collectionView.reloadData()
+        }))
+        alertController.addAction(UIAlertAction(title: "Delete", style: .default, handler: { (action) in
+            self.people.remove(at: indexPath.item)
             self.collectionView.reloadData()
         }))
         present(alertController, animated: true, completion: nil)
