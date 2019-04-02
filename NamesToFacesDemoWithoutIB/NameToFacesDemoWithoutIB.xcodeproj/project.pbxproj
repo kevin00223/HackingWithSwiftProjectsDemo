@@ -53,6 +53,7 @@
 		A23B433B22409FF00013E9EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A23B433D2240BAE40013E9EB /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		A23B433F2240E0E60013E9EB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A23B43D82242270B0013E9EB /* NameToFacesDemoWithoutIB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NameToFacesDemoWithoutIB.entitlements; sourceTree = "<group>"; };
 		A993284722DCDC98E7FAC17B /* Pods-NameToFacesDemoWithoutIB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameToFacesDemoWithoutIB.release.xcconfig"; path = "Pods/Target Support Files/Pods-NameToFacesDemoWithoutIB/Pods-NameToFacesDemoWithoutIB.release.xcconfig"; sourceTree = "<group>"; };
 		B9C497A767A440991B27A7B4 /* libPods-NameToFacesDemoWithoutIB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NameToFacesDemoWithoutIB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +126,7 @@
 		A23B430A22409D3D0013E9EB /* NameToFacesDemoWithoutIB */ = {
 			isa = PBXGroup;
 			children = (
+				A23B43D82242270B0013E9EB /* NameToFacesDemoWithoutIB.entitlements */,
 				A23B430B22409D3D0013E9EB /* AppDelegate.swift */,
 				A23B430F22409D3D0013E9EB /* Main.storyboard */,
 				A23B431222409D3E0013E9EB /* Assets.xcassets */,
@@ -224,6 +226,11 @@
 				TargetAttributes = {
 					A23B430722409D3D0013E9EB = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					A23B431B22409D3E0013E9EB = {
 						CreatedOnToolsVersion = 10.1;
@@ -488,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ6UA9X9H9;
 				INFOPLIST_FILE = NameToFacesDemoWithoutIB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ6UA9X9H9;
 				INFOPLIST_FILE = NameToFacesDemoWithoutIB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
