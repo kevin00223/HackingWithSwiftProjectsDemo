@@ -21,6 +21,15 @@ class ViewController: UICollectionViewController {
         initNavigationBar()
         
         print(UUID().uuidString)
+        
+        //1. read from UserDefaults
+        //2. convert data to the type it should be by using NSKeyedUnarchiver
+        let defaults = UserDefaults.standard
+        if let savedPeople = defaults.object(forKey:"people") as? Data {
+            if let decodedPeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPeople) as? [Person] {
+                people = decodedPeople ?? [Person]()
+            }
+        }
     }
     
     func initValues() {
@@ -44,6 +53,17 @@ class ViewController: UICollectionViewController {
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true, completion: nil)
+    }
+    
+    // convert people array into data to use UserDefaults to write and read
+    // 1. each item of people array is a customed class
+    // 2. to use UserDefaults to write(save) and read data, that customed class must convert to Data type (bacause userDefaults cannot save customed class type data, but can save Data type)
+    // 3. at the same time, that customed class must conform to NSCoding protocol
+    func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -91,10 +111,12 @@ class ViewController: UICollectionViewController {
             guard let newName = alertController.textFields?[0].text else { return }
             person.name = newName
             self.collectionView.reloadData()
+            self.save()
         }))
         alertController.addAction(UIAlertAction(title: "Delete", style: .default, handler: { (action) in
             self.people.remove(at: indexPath.item)
             self.collectionView.reloadData()
+            self.save()
         }))
         present(alertController, animated: true, completion: nil)
     }
@@ -121,6 +143,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         let person = Person(name: "Unknown", image: imageName)
         people.append(person)
         collectionView.reloadData()
+        
+        save()
         
         dismiss(animated: true, completion: nil)
         
