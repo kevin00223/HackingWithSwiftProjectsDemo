@@ -93,3 +93,27 @@ passed
 5. `UUID`
 6. ⚠️为什么创建一个继承自NSObject类的Person类 还自定义了构造方法 却不使用struct(本身就自带默认的`memberwise initializer`, 解释见demo12)
 7. ⚠️重新运行后之前显示的图片消失 页面为空(涉及数据持久化存储 见demo12)
+
+### Key points in demo11 *Pachinko*
+1. `SpriteKit`: Apple's fast and easy toolkit designed specifically for 2D games. It includes sprites, fonts, physics, particle effects and more, and it's built into every iOS device.
+2. Anchor point: “position me based on my center”, whereas UIKit positions things based on their top-left corner
+3. `SKSpriteNode`: to load any picture from your app bundle just like UIImage
+4. Data type: `Set`, just like an array, except each object can appear only once: touchsBegan方法中返回的touches数组就是Set类型
+5. `Int.random(in:)` to get a random integer
+6. `CGFloat.random(in:)` to get a random cgfloat number
+
+### Key points in demo12 *UersDefaults*
+1. structs: all basic data type are structs, ie Int, Float, Bool, String, Array, Dictionary, Date (In swift, strings, arrays and dictionaries are all structs, not objects) ???
+2. `UserDefaults`: 
+    1. it can be used to store any basic data type: Int, Float, Bool, String, URL, along with complex type: Array, Dictionary, Data
+    2. But if u want to store custom type data(such as a custom class), you should convert it into Data first by using NSKeyArchiver and also make your custom type data conform to NSCoding protocol 
+    ![](http://i63.tinypic.com/121x2cx.png)
+    3. 总结: ???
+        1. swift里的基本数据类型int float string array dictionary本质都是struct
+        2. 而且这些基本数据类型(包括很多系统的类, 如UIColor, UIImage等)都默认遵守NSCoding协议
+        3. 但是struct类型并不默认遵守NSCoding协议 且也不能遵守NSCoding协议
+        4. 因此如果想将自定义数据通过UserDefaults方式保存, 需要定义成类 而不是结构体
+3. In `UserDefaults`, use `object(forKey: )` and as? To get an optional object, then use ?? to either unwrap the object or set a default value, all in one line. 
+![](http://i64.tinypic.com/zva1pf.png)
+4. `NSCoder`: is responsible for both encoding(writing) and decoding(reading) your data so that it can be used with UserDefaults
+5. keyword: `required` in NSCoder init method means: is anyone tried to subclass this class, they are required to implement this method
