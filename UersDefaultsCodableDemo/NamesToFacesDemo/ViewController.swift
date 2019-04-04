@@ -21,6 +21,16 @@ class ViewController: UICollectionViewController {
         initNavigationBar()
         
         print(UUID().uuidString)
+        
+        let defaults = UserDefaults.standard
+        if let savedPeople = defaults.object(forKey: "people") as? Data {
+            let jsonDecoder = JSONDecoder()
+            do {
+                people = try jsonDecoder.decode([Person].self, from: savedPeople)
+            } catch {
+                print("Failed to load people.")
+            }
+        }
     }
     
     func initValues() {
@@ -44,6 +54,16 @@ class ViewController: UICollectionViewController {
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true, completion: nil)
+    }
+    
+    func save() {
+        let jsonEncoder = JSONEncoder()
+        if let savedData = try? jsonEncoder.encode(people) { //convert people array into data
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        } else {
+            print("Failed to save people.")
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -91,10 +111,12 @@ class ViewController: UICollectionViewController {
             guard let newName = alertController.textFields?[0].text else { return }
             person.name = newName
             self.collectionView.reloadData()
+            self.save()
         }))
         alertController.addAction(UIAlertAction(title: "Delete", style: .default, handler: { (action) in
             self.people.remove(at: indexPath.item)
             self.collectionView.reloadData()
+            self.save()
         }))
         present(alertController, animated: true, completion: nil)
     }
@@ -121,6 +143,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         let person = Person(name: "Unknown", image: imageName)
         people.append(person)
         collectionView.reloadData()
+        
+        save()
         
         dismiss(animated: true, completion: nil)
         
