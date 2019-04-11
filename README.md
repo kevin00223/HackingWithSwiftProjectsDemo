@@ -129,3 +129,24 @@ passed
     2. 而且这些基本数据类型(包括很多系统的类, 如UIColor, UIImage等)都默认遵守NSCoding协议
     3. 但是struct类型并不默认遵守NSCoding协议 且也不能遵守NSCoding协议
     4. 因此如果想将自定义数据通过UserDefaults方式保存, 需要定义成类 而不是结构体
+
+
+### Key points in Demo13 *Instafilter*
+1. `Auto Layout`: Reset To Suggested Constraints
+2. `Core Image`: apply filters to images
+    1. Two important classes:
+        1. `CIContext`: a component from CoreImage that handles rendering
+        2. `CIFilter`: 图片渲染器
+    2. How to render a image 
+        1. 实例化一个`CIFilter`类的对象(渲染器) 设置渲染方式
+        2. 将需要被渲染的图片转成`CIImage`对象, 并设置给渲染器
+        3. 执行渲染:
+            1. 将slider的值设置给不同渲染器对应的key
+            2. 从渲染器中获取图片(`outputImage`)
+            3. 将图片交给`CIContext`对象进行渲染: 将返回的`CGImage`对象转成`UIImage`对象并设置给`UIImageView`
+![](http://i66.tinypic.com/vzkhox.png)
+![](http://i64.tinypic.com/25kr6du.png)
+3. `UIImageWriteToSavedPhotosAlbum()` 保存图片到相册 (截图)
+    1. `Selector`中方法参数书写格式: 只需要保存形参(外不用参数), 不需要体现实参(内部用参数)
+    2. `Error`: Swift中的Error是一个协议(不是类), 可以通过`localizedDescription`属性打印错误信息
+![](http://i65.tinypic.com/213ozsp.png)
