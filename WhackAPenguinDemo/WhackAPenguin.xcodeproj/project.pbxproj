@@ -28,6 +28,7 @@
 		A23B44DA22657FF40013E9EB /* gameOver.png in Resources */ = {isa = PBXBuildFile; fileRef = A23B44CC22657FF40013E9EB /* gameOver.png */; };
 		A23B44DB22657FF40013E9EB /* whackMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23B44CD22657FF40013E9EB /* whackMask@2x.png */; };
 		A23B44DC22657FF40013E9EB /* whackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23B44CE22657FF40013E9EB /* whackBackground@2x.png */; };
+		A23B44DE2265852C0013E9EB /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B44DD2265852C0013E9EB /* WhackSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		A23B44CC22657FF40013E9EB /* gameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameOver.png; sourceTree = "<group>"; };
 		A23B44CD22657FF40013E9EB /* whackMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackMask@2x.png"; sourceTree = "<group>"; };
 		A23B44CE22657FF40013E9EB /* whackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackBackground@2x.png"; sourceTree = "<group>"; };
+		A23B44DD2265852C0013E9EB /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				A23B44A822657E360013E9EB /* AppDelegate.swift */,
 				A23B44AA22657E360013E9EB /* GameScene.sks */,
 				A23B44AE22657E360013E9EB /* GameScene.swift */,
+				A23B44DD2265852C0013E9EB /* WhackSlot.swift */,
 				A23B44B022657E360013E9EB /* GameViewController.swift */,
 				A23B44B222657E360013E9EB /* Main.storyboard */,
 				A23B44B522657E370013E9EB /* Assets.xcassets */,
@@ -208,6 +211,7 @@
 			files = (
 				A23B44AF22657E360013E9EB /* GameScene.swift in Sources */,
 				A23B44B122657E360013E9EB /* GameViewController.swift in Sources */,
+				A23B44DE2265852C0013E9EB /* WhackSlot.swift in Sources */,
 				A23B44A922657E360013E9EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
