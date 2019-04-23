@@ -103,7 +103,7 @@ passed
 6. `CGFloat.random(in:)` to get a random cgfloat number
 
 ### Key points in demo12 *UserDefaults* via NSCoding & Codable
-1. structs: all basic data type are structs, ie Int, Float, Bool, String, Array, Dictionary, Date (In swift, strings, arrays and dictionaries are all structs, not objects) ???
+1. structs: all basic data type are structs, ie Int, Float, Bool, String, Array, Dictionary, Date (In swift, strings, arrays and dictionaries are all structs, not objects like in OC)
 2. `UserDefaults`: 
     1. Function:
         1. it can be used to store any basic data type: Int, Float, Bool, String, URL, along with complex type: Array, Dictionary, Data
@@ -124,10 +124,10 @@ passed
 ![](http://i64.tinypic.com/zva1pf.png)
 4. `NSCoder`: is responsible for both encoding(writing) and decoding(reading) your data so that it can be used with UserDefaults
 5. keyword: `required` in NSCoder init method means: is anyone tried to subclass this class, they are required to implement this method
-6. 总结:???
+6. 总结:
     1. swift里的基本数据类型int float string array dictionary本质都是struct
     2. 而且这些基本数据类型(包括很多系统的类, 如UIColor, UIImage等)都默认遵守NSCoding协议
-    3. 但是struct类型并不默认遵守NSCoding协议 且也不能遵守NSCoding协议
+    3. 但是自定义的struct类型并不默认遵守NSCoding协议 且也不能遵守NSCoding协议
     4. 因此如果想将自定义数据通过UserDefaults方式保存, 需要定义成类 而不是结构体
 
 
